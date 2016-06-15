@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hank Quinlan, Horrible Cop, Launches Site"
-date: 2014-04-30
+date: 2016-06-15
 ---
 
-why? Why is the previous page 404? Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
+I bet this will succeed! Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
