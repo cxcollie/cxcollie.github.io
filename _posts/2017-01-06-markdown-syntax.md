@@ -87,8 +87,3 @@ System.out.println("123" + a);
 Sample text here...
 ```
 
-footnote [^1].
-
-[^1]: To say down here.
-
-This PR looks great - it's ready to merge! :shipit:

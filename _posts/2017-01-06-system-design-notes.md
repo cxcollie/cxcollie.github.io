@@ -54,7 +54,7 @@ date: 2017-01-06
 5. But it seems to be unfair to let the neighboring node of new node to do migration job. So here we can further divide node into r parts by inserting r duplicate notation onto the cycle. In total there will be nr points.
 
 ### Other notes
-1. Winter is coming now! It's becoming colder and colder :snowflake: .
+1. Winter is coming! It's becoming colder and colder.
 
 ### References
 1. [CS75 Lec9 - Scalability by David Malan](https://www.youtube.com/watch?v=-W9F__D3oY4&index=1&list=WL)
