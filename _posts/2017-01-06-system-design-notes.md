@@ -13,10 +13,6 @@ date: 2017-01-06
 
 ### Scalability
 
-_All problems in computer science can be solved by another level of indirection, except of course for the problem of too many indirection._
-<div style="text-align: right"> --David Wheeler </div>
-
-<br></br>
 1. When our application becomes famous, to accommodate large volume of visits, we need to scale up (in application or database layer). Scalability includes vertical and horizontal ones.
     - In vertical, we can increase the computation capability or storage of our server. But when the scale exceeds the capability of single machine, we will need the horizontal scalability;
     - In horizontal, we increase the number of machines, where replication, sharding and load balancing may be involved.
