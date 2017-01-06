@@ -51,6 +51,16 @@ odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac 
 * [Chapter 2](#chapter-2)
 * [Chapter 3](#chapter-3)
 
+{% highlight ruby %}
+def show
+@widget = Widget(params[:id])
+respond_to do |format|
+format.html # show.html.erb
+format.json { render json: @widget }
+end
+end
+{% endhighlight %}
+
 Testing the email address. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
 
 ```js
@@ -82,12 +92,4 @@ Sample text here...
 <div class="class">
 </div>
 
-{% highlight ruby %}
-def show
-@widget = Widget(params[:id])
-respond_to do |format|
-format.html # show.html.erb
-format.json { render json: @widget }
-end
-end
-{% endhighlight %}
+
