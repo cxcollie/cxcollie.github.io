@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "System design: scalability, fault tolerance and consistent hashing"
+comments: true
 date: 2017-01-06
 ---
 

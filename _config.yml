@@ -1,4 +1,4 @@
- name: Hank Quinlan, Horrible Cop
+ name: Xiaocong Chen's Blog
  markdown: kramdown
  permalink: /blog/:year/:month/:day/:title
  highlighter: rouge
