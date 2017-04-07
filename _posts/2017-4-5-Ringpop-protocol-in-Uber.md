@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ringpop protocol in Uber"
+comments: true
 date: 2017-04-05
 ---
 
@@ -12,7 +13,7 @@ date: 2017-04-05
 </div>
 
 ### Ringpop
-Ringpop [^1][^2] is a scalable protocol which can handle membership change, consistent hash, forward capability. The original one is written in Javascript as Uber is heavy Node.js.
+Ringpop <sup>[1][2]</sup> is a scalable protocol which can handle membership change, consistent hash, forward capability. The original one is written in Javascript as Uber is heavy Node.js.
 
 <div style="text-align: center">
 <img src ="{{site.url}}/images/2017-04/Ringpop-Forwarding-Request-Step-1.png" />

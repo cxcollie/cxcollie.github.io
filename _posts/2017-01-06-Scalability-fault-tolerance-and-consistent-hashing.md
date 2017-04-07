@@ -12,8 +12,10 @@ date: 2017-01-06
 <div id="sca">
 </div>
 
-### Scalability
-_All problems in computer science can be solved by another level of indirection, except of course for the problem of too many indirection._
+## Scalability
+<div>
+<p class="quote">All problems in computer science can be solved by another level of indirection, except of course for the problem of too many indirection. </p>
+</div>
 <div style="text-align: right"> --David Wheeler </div>
 
 1. When our application becomes famous, to accommodate large volume of visits, we need to scale up (in application or database layer). Scalability includes vertical and horizontal ones.

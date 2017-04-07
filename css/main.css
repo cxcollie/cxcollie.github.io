@@ -210,7 +210,8 @@
 
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 80%;
+    font-size: 1.2em;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -244,7 +245,7 @@ footer {
 }
 
 ul.posts { 
-    margin: 20px auto 40px; 
+    margin: 15px auto 60px; 
     font-size: 1.2em;
 }
 
@@ -253,9 +254,15 @@ ul.posts li {
 }
 
 .quote {
-    background-color: #ddffdd;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-right: 10em;
+    margin-left: 3em;
+}
+
+.cute {
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .imageNotation {
-    font-size: 0.5em;
+    font-size: 1em;
 }
