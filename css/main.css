@@ -253,6 +253,16 @@ ul.posts li {
     list-style: none;
 }
 
+h3.cv-h3 {
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+}
+
+ul.cv-ul {
+  margin-top: 0.3em;
+  margin-bottom: 0em;
+}
+
 .quote {
     font-family: "Comic Sans MS", cursive, sans-serif;
     margin-right: 10em;
