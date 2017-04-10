@@ -2,6 +2,8 @@
 layout: post
 title: "Markdown syntax notes"
 date: 2017-01-06
+comments: true
+tags: [Notes]
 ---
 
 # h1 Heading

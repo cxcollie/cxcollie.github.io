@@ -1,10 +1,13 @@
 ---
 layout: post
-title: "Ringpop protocol in Uber"
-comments: true
+title: "Ringpop @Uber"
 date: 2017-04-05
-tags: [web, distributed system]
+comments: true
+tags: [System-Design, Engr-Blog]
 ---
+
+<div class="post-teaser"> Introducing the largest 'candy jewel ring' in the world. </div>
+<!-- more -->
 
 * [Ringpop](#rp)
 * [Actor Model](#am)
@@ -14,15 +17,15 @@ tags: [web, distributed system]
 </div>
 
 ### Ringpop
-Ringpop <sup>[1][2]</sup> is a scalable protocol which can handle membership change, consistent hash, forward capability. The original one is written in Javascript as Uber is heavy Node.js.
+Ringpop <sup>[1][2]</sup> is a scalable protocol developed at Uber, which can handle membership change, consistent hash, forward capability. The original one is written in Javascript as Uber is heavy Node.js.
 
 <div style="text-align: center">
-<img src ="{{site.url}}/images/2017-04/Ringpop-Forwarding-Request-Step-1.png" />
-<p class='imageNotation'>Illustration of Ringpop protocol.</p>
+<img style="width: 50%" src ="{{site.url}}/images/2017-04/Ringpop-Forwarding-Request-Step-1.png" />
+<p class='imageNotation'>No! This is not a candy jewel ring!</p>
 </div>
 
 1. Membership change. Ringpop use SWIM to discover new member and handle failure. Whenever a node finds a new node has joined, it updates the stored member list, and hence the consistent hashing ring.
-2. Consistent hashing. Ringpop use it to map file/value to certain node, using FarmHash as its hash function, and red-black tree for its ring.
+2. Consistent hashing. Ringpop use it to map file/value to certain node, using FarmHash as its hash function, and red-black tree to represent the ring.
 3. Forward capability. As a store request may need to take effect on other node, node can forward this request (to neighboring node or router of other node cluster). The forward request is sent through TChannel (in HTTP form?).
 4. Actor Model is used as the concurrent model, which is discussed in the following.
 5. In the video, the Flap Dampening is also mentioned, which can detect some bad-behaved node that does not react normally. A node is discarded from the cluster only when it is reported as flappy for certain times.

@@ -2,6 +2,8 @@
 layout: post
 title: "Notes about Memcache at Facebook"
 date: 2017-03-25
+comments: true
+tags: [System-Design]
 ---
 
 #### Reading notes of "Scaling Memcache at Facebook"

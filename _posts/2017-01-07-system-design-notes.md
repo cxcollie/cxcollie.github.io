@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "System design: scalability, fault tolerance and consistent hashing"
+title: "System Design Process"
 date: 2017-01-07
+comments: true
+tags: [System-Design]
 ---
 
 * [Process in system design](#pro)
