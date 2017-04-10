@@ -2,6 +2,7 @@
 layout: post
 title: "Shuffle in Map-Reduce"
 date: 2017-04-04
+comments: true
 ---
 
 * [Shuffle](#shuf)

@@ -3,6 +3,7 @@ layout: post
 title: "Ringpop protocol in Uber"
 comments: true
 date: 2017-04-05
+tags: [web, distributed system]
 ---
 
 * [Ringpop](#rp)
