@@ -12,18 +12,21 @@ title: Blogs
 	  </a></li>
 	  <div class="post-teaser"> {{ post.content | split:"<!-- more -->" | first % }} </div>
 
+	  <div style="margin-top: 0.7em">
 	  <span>{{ post.date | date_to_string }}</span>   
 		
 		{% if post.tags != empty %}
         |
         {% for tag in post.tags %}
-        <a class="codinfox-tag-mark" href="/blog/tag/#{{ tag | slugify }}"><i class="fa fa-tag"></i>{{ tag }}</a>
+        <a class="codinfox-tag-mark" href="/blog/tag"><i class="fa fa-tag"></i>{{ tag }}</a>
         {% endfor %}
         {% endif %}
 
         <br>
         <hr/>
 	  {% endfor %}
+
+	  </div>
 
 
 	</ul>

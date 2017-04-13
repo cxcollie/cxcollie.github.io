@@ -263,6 +263,9 @@ ul.cv-ul {
   margin-bottom: 0em;
 }
 
+.cv-a {
+}
+
 .quote {
     font-family: "Comic Sans MS", cursive, sans-serif;
     margin-right: 10em;
@@ -296,10 +299,21 @@ hr {
 }
 
 
-.codinfox-tag-mark{
+.codinfox-tag-mark {
     font-size: 1em;
     padding: 0 .5rem 0 .5rem;
     border-radius: 5px;
     background: #e7f2f7;
     color: #6a9fb5;
+}
+
+.codinfox-tag-mark:hover { 
+    background: #6a9fb5;
+    color: #e7f2f7;
+    text-decoration: none;
+}
+
+.header-icons:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
