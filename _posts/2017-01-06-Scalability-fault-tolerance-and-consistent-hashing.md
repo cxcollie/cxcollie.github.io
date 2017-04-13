@@ -1,10 +1,15 @@
 ---
 layout: post
-title: "System design: scalability, fault tolerance and consistent hashing"
+title: "System Design Note 1: Scalability, Fault Tolerance and Consistent Hashing"
 date: 2017-01-06
 comments: true
 tags: [System-Design]
 ---
+
+<div class="post-teaser"> "Mom, my toy box is full!" </div>
+<!-- more -->
+
+<hr/>
 
 * [Scalability](#sca)
 * [Fault tolerance](#ft)

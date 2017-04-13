@@ -3,11 +3,13 @@ layout: post
 title: "Shuffle in Map-Reduce @Google"
 date: 2017-04-04
 comments: true
-tags: [System-Design]
+tags: [System-Design, Engr-Blog]
 ---
 
 <div class="post-teaser"> How to shuffle cards like a pro? </div>
 <!-- more -->
+
+<hr/>
 
 * [Shuffle](#shuf)
 

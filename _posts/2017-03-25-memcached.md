@@ -1,10 +1,16 @@
 ---
 layout: post
-title: "Notes about Memcache at Facebook"
+title: "Scaling Memcache @Facebook"
 date: 2017-03-25
 comments: true
-tags: [System-Design]
+tags: [System-Design, Engr-Blog]
 ---
+
+<div class="post-teaser"> How to improve your memory? </div>
+<div class="post-teaser"> 1. Get more sleep... </div>
+<!-- more -->
+
+<hr/>
 
 #### Reading notes of "Scaling Memcache at Facebook"
 

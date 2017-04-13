@@ -1,10 +1,17 @@
 ---
 layout: post
-title: "System Design Process"
+title: "System Design Note 2: Design Process and Salted Password Hash"
 date: 2017-01-07
 comments: true
 tags: [System-Design]
 ---
+
+<div class="post-teaser"> How to get a Salted Password: </div>
+<div class="post-teaser"> 1. Place <strike>chicken</strike> password in slow cooker. Season with salt and pepper.</div>
+<div class="post-teaser"> 2. Cook on high, stirring occasionally, for 4 hours...</div>
+<!-- more -->
+
+<hr/>
 
 * [Process in system design](#pro)
 * [Salted Password Hash](#sph)

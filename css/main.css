@@ -294,3 +294,12 @@ hr {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #fff;
 }
+
+
+.codinfox-tag-mark{
+    font-size: 1em;
+    padding: 0 .5rem 0 .5rem;
+    border-radius: 5px;
+    background: #e7f2f7;
+    color: #6a9fb5;
+}

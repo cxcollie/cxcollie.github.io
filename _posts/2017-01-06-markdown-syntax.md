@@ -6,6 +6,11 @@ comments: true
 tags: [Notes]
 ---
 
+<div class="post-teaser"> How to write 'I Love You' in 20 languages? </div>
+<!-- more -->
+
+<hr/>
+
 # h1 Heading
 ## h2 Heading
 ### h3 Heading

@@ -9,6 +9,8 @@ tags: [System-Design, Engr-Blog]
 <div class="post-teaser"> Introducing the largest 'candy jewel ring' in the world. </div>
 <!-- more -->
 
+<hr/>
+
 * [Ringpop](#rp)
 * [Actor Model](#am)
 * [SWIM](#sw)
