@@ -317,3 +317,53 @@ hr {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
+
+.qqzone-header {
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {color: #d2ece1;}
+    25%  {color: #ffd3b5;}
+    50%  {color: #ffc6aa;}
+    75%  {color: #ff8c94;}
+    100% {color: #d2ece1;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {color: #d2ece1;}
+    25%  {color: #ffd3b5;}
+    50%  {color: #ffc6aa;}
+    75%  {color: #ff8c94;}
+    100% {color: #d2ece1;}
+}
+
+.qqzone-header-2 {
+    -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+    0%   {color: #f2f210;}
+    50%  {color: #f4c741;}
+    100% {color: #f2f210;}
+}
+
+/* Standard syntax */
+@keyframes example2 {
+    0%   {color: #f2f210;}
+    50%  {color: #f4c741;}
+    100% {color: #f2f210;}
+}
