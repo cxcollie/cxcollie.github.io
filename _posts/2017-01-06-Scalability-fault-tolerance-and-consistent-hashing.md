@@ -18,7 +18,7 @@ tags: [System-Design]
 <div id="sca">
 </div>
 
-## Scalability
+### Scalability
 <div>
 <p class="quote">All problems in computer science can be solved by another level of indirection, except of course for the problem of too many indirection. </p>
 </div>
