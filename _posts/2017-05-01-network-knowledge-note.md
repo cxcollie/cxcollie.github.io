@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Network Knowledge Note"
+title: "Network and Security Note"
 date: 2017-05-01
 comments: true
 tags: [Notes]
@@ -10,6 +10,12 @@ tags: [Notes]
 <!-- more -->
 
 <hr/>
+
+* [Network](#ne)
+* [Security](#se)
+
+<div id="ne">
+</div>
 
 ### Network
 
@@ -24,6 +30,9 @@ tags: [Notes]
 5. TCP: Transmission Control Protocol (TCP) is at transport layer. It provides end-to-end reliability, sequencing of packets and flow control.
 6. CSMA: mainly used when there can be jam of traffic in network channel, especially wireless network. CSMA/CA is collision avoidance (CA) version, which tries to avoid collision; CSMA/CD is collision detection (CD) version, which terminate transmission once collision is detected, and thus improving performance of CSMA by shortening retry time.
 
+<div id="se">
+</div>
+
 ### Security
 
 1. HTTPS process: client request secure session -> server responds with certificate (with public key on that) -> client encrypt the session key with public key -> server decrypt the session key -> the rest of the session will use the session key. Roughly speaking, it is on session layer of OSI layer.
@@ -37,6 +46,20 @@ tags: [Notes]
 	- hide inner IP topology
 	- can act as a firewall
 	- add an abstraction layer (on application, serucity and so on)
+4. RSA encryption
+	- choose prime number p, q
+	- n = pq
+	- choose a e that is not a divisor of (p - 1)(q - 1)
+	- find d such that (de)mod(p - 1)(q - 1) = 1
+	- then public key is e,n, private key is d
+	- ciphertext c=m^e mod n, message m=c^d mod n
+5. Security in Android app:
+	- permission: Before installing app, it will prompt user for permission.
+	- local data: When using internal storage, we can edit flags to make it unaccessible for other applications. When using external storage, we can perform input validation. When using contentProvider, which can be accessed for other applications, and can modify the accessibility in read and write.
+	- network data: We should always try to use HTTPS or SSL protocol when using network data. 
+	- user data storage: Using accountManager to store password, or KeyStore for storage.
+	- dynamically loading code: Don’t load code that is not in your application SDK (especially the unencrypted internet data). That’s one of the reason why we need to register activity on manifest.xml.
+	- WebView: Caution when loading JavaScript code. And they are granted the same permission as your application.
 
 ### References
 1. [Networking Tutorial](http://www.comptechdoc.org/independent/networking/guide/index.html)
