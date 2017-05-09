@@ -54,7 +54,7 @@ tags: [System-Design]
 ### Consistent hashing
 1. Most of the NoSQL use key-value hash. The key can be hashed to numerical representation, then is stored. We can retrieve which node this entry is stored based on its hashcode. For example, if we have n databases, then we can do a modular on hashcode to decide which node to store.
 2. In the above case, when set of database changes, i.e. a new database comes, or one of them is down, we need to migrate data. For example, when n changes to n+1, each database needs to migrate 1/((n+1)*n) of its data, which in total is 1/(n+1). This is a big deal!
-3. Consistent hashing can solve the above problem. Considering the hash space as a cycle, and we position all the nodes onto that cycle. To store a new key-value pair, we find the nearest node in certain direction (clockwise or counter-clockwise), as illustrated by following figure[^2].
+3. Consistent hashing can solve the above problem. Considering the hash space as a cycle, and we position all the nodes onto that cycle. To store a new key-value pair, we find the nearest node in certain direction (clockwise or counter-clockwise), as illustrated by following figure<sup>[2]</sup>.
 <div style="text-align: center">
 <img src ="{{site.url}}/images/2017-01/consistent_hashing.png" />
 <p class='imageNotation'>A cycle where points denote nodes, and the key will be stored in node 1.</p>
