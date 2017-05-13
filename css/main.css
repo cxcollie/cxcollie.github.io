@@ -370,3 +370,10 @@ hr {
     100% {color: #f2f210;}
 }
 
+.about-container {
+  margin: 0 0.4em 0 0.4em;
+  font-size: 1em; 
+  width: 18%; 
+  height: 100%; 
+  float: left;
+}
