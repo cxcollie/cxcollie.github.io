@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Network and Security Note"
+title: "Network and Security Notes"
 date: 2017-05-01
 comments: true
 tags: [Notes]

@@ -6,21 +6,21 @@ comments: true
 tags: [Notes]
 ---
 
-<div class="post-teaser">  </div>
+<div class="post-teaser"> Welcome to the βΔλ fraternity! </div>
 <!-- more -->
 
 <hr/>
 
 ### Serverless
 
-1. Serverless architecture refers to utilizing the third-party services (like AWS Lambda) or ephermal containers<sup>[1]</sup>. It is usually linked with PaaS, API Gateway, and Lambda Expression. It doesn't mean 'no server in backend', but freedom from worrying about operating, monitoring and scaling servers. An example of web application using serverless architecture is shown as below.
+1. <a href="https://martinfowler.com/articles/serverless.html">Serverless architecture</a> refers to utilizing the third-party services (like AWS Lambda) or ephermal containers<sup>[1]</sup>. It is usually linked with PaaS, API Gateway, and Lambda Expression. It doesn't mean 'no server in backend', but freedom from worrying about operating, monitoring and scaling servers. An example of web application using serverless architecture is shown as below.
 
 <div style="text-align: center">
 <img style="width: 75%" src ="{{site.url}}/images/2017-05/Lambda_WebApplications.png" />
 <p class='imageNotation'>Serverless web application using AWS.<sup>[2]</sup></p>
 </div>
 
-2. #NoOps: Serverless does not mean freedom from worrying about operation work. Outsourcing servers does not mean oursourcing responsibility<sup>[2]</sup>. We still need to think about benchmark, load testing, resilency and administration. Sometimes more works are needed as the tools of serverless are new. So it's better to say: #LessOps.
+2. #NoOps: Serverless does not mean freedom from worrying about operation work. <a href="">Outsourcing servers does not mean oursourcing responsibility</a href="https://www.infoq.com/presentations/bustle-serverless"><sup>[2]</sup>. We still need to think about benchmark, load testing, resilency and administration. Sometimes more works are needed as the tools of serverless are new. So it's better to say: #LessOps.
 3. The major advantages are usage of cloud. We can rely on the experts to scale the servers for us automatically. The operation cost is less (pay much as we use, like number of Lambda called, instead of running a EC2 all day).
 4. The disadvantages include:
 	* Lock-in effect: we may rely more on single cloud vendor.
@@ -28,7 +28,7 @@ tags: [Notes]
 
 ### Lambda Expressions
 
-1. Lambda expressions are commonly used in serverless architecture. It enables developers to write anonymous class in a much more readable way. In Java 8, a typical lambda expression looks like this (detailed implementation<sup>[2]</sup>):
+1. Lambda expressions are commonly used in serverless architecture. It enables developers to write anonymous class in a much more readable way. In Java 8, a typical lambda expression looks like this (<a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">detailed implementation</a><sup>[4]</sup>):
 ```
 Collections.sort(personList, **(p1, p2) -> p1.firstName.compareTo(p2.firstName)**);
 ```

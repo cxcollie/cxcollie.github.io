@@ -20,7 +20,7 @@ tags: [System-Design, Engr-Blog]
 </div>
 
 ### Ringpop
-Ringpop <sup>[1][2]</sup> is a scalable protocol developed at Uber, which can handle membership change, consistent hash, forward capability. The original one is written in Javascript as Uber is heavy Node.js.
+<a href="https://eng.uber.com/intro-to-ringpop/">Ringpop</a> <sup>[1][2]</sup> is a scalable protocol developed at Uber, which can handle membership change, consistent hash, forward capability. The original one is written in Javascript as Uber is heavy Node.js.
 
 <div style="text-align: center">
 <img style="width: 50%" src ="{{site.url}}/images/2017-04/Ringpop-Forwarding-Request-Step-1.png" />
@@ -40,7 +40,7 @@ Ringpop <sup>[1][2]</sup> is a scalable protocol developed at Uber, which can ha
 Actor model is used in Ringpop system. Let's briefly see what is it.
 
 1. Actor model is used in concurrent system. As a substitute of multi-thread model, it gives a solution on interacting between different objects in a system.
-2. "An actor is the primitive unit of computation. It’s the thing that receives a message and do some kind of computation based on it <sup>[3]</sup>. " Different from that in OOP, different actor does not share memory with each other.
+2. "An <a href="http://www.brianstorti.com/the-actor-model/">actor</a> is the primitive unit of computation. It’s the thing that receives a message and do some kind of computation based on it <sup>[3]</sup>. " Different from that in OOP, different actor does not share memory with each other.
 3. Each actor has a mailbox, which receives message to be processed in serial. If you want the mailbox to process in parallel, then you should have several actors. Upon receiving a message, actor can either create new actor, send message to another actor, or determine the state of next message.
 4. In fault-tolerance manner, actor can process message all again from beginning.
 
@@ -48,7 +48,7 @@ Actor model is used in Ringpop system. Let's briefly see what is it.
 </div>
 
 ### SWIM member control
-SWIM is a membership maintenance protocol, which is similar with Gossip <sup>[4]</sup>.
+<a href="https://prakhar.me/articles/swim/">SWIM</a> is a membership maintenance protocol, which is similar with Gossip <sup>[4]</sup>.
 
 1. At each time, node ni randomly pick a node nj to ping. If it does not receive ack as expected, it chooses another k random node to also ping that node. If all of them do not get ack from that node, it is (suspected to have) failed.
 2. To have higher accuracy, we can add a suspicion mechanism, where a node is marked as suspected, using the SWIM protocol, and gossip this suspicion. When later that node response again, it is remarked as alive.

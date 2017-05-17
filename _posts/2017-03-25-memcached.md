@@ -3,6 +3,7 @@ layout: post
 title: "Scaling Memcache @Facebook"
 date: 2017-03-25
 comments: true
+feature: true
 tags: [System-Design, Engr-Blog]
 ---
 

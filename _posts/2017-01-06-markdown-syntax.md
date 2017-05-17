@@ -6,7 +6,7 @@ comments: true
 tags: [Notes]
 ---
 
-<div class="post-teaser"> How to write 'I Love You' in 20 languages? </div>
+<div class="post-teaser"> How to write 'I Love You❤️' in 20 languages? </div>
 <!-- more -->
 
 <hr/>

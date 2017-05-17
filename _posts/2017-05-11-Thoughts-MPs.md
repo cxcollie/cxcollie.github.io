@@ -3,7 +3,8 @@ layout: post
 title: "Thoughts for ECE428 MPs"
 date: 2017-05-09
 comments: true
-tags: [Notes]
+featured: true
+tags: [Thoughts]
 ---
 
 <div class="post-teaser"> Another semester ends! :) </div>

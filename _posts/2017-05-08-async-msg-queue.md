@@ -35,22 +35,22 @@ Then the problem is: how to build the buffer? And how is the work past through t
 <p class='imageNotation'>Oh! Another message!<sup>[7]</sup></p>
 </div>
 
-So these are the major concern for a message queue: quick append, notification and persistent storage. The database can be modified as a MQ for moderate usage, but not fit for high demand. Good news is there are several MQs designed for use; and in fact some RDBMS like PostgreSQL also offers native support for asynchronous notification<sup>[3]</sup>. 
+So these are the major concern for a message queue: quick append, notification and persistent storage. The database can be modified as a MQ for moderate usage, but not fit for high demand. Good news is there are several MQs designed for use; and in fact some RDBMS like <a href="https://www.postgresql.org/docs/9.2/static/libpq-notify.html">PostgreSQL</a> also offers native support for asynchronous notification<sup>[3]</sup>. 
 <br><br>
-One thing to point out is using MQ in the system may add some complexity to it. So it should be used only when necessary<sup>[1]</sup>. Now, let's see some of the coolest MQs.
+One thing to point out is using MQ in the system may <a href="http://blog.codepath.com/2012/11/15/asynchronous-processing-in-web-applications-part-1-a-database-is-not-a-queue/">add some complexity</a> to it. So it should be used only when necessary<sup>[1]</sup>. Now, let's see some of the coolest MQs.
 
 ### ZeroMQ
 
-1. Different from the other MQ structure (Producer-Broker-Consumer), ZeroMQ does not have a broker. It offers users the freedom (and also responsibility) to implement more details of it. Thus it has the best performance among others<sup>[5]</sup>.
-2. There are 2 processes in ZeroMQ model<sup>[4]</sup>: prompt and display. Prompt receives the input (producer), may pass it to E (Exchange, a local queue), then sends to the global/central Q (Queue, a global queue that receives input from all local Es). Display receives message from global/central E (a global queue that distributes message to local Qs) through local Q, then excutes them.
+1. Different from the other MQ structure (Producer-Broker-Consumer), ZeroMQ does not have a broker. It offers users the freedom (and also responsibility) to implement more details of it. Thus it has the <a href="http://mikehadlow.blogspot.com/2011/04/message-queue-shootout.html">best performance</a> among others<sup>[5]</sup>.
+2. There are 2 processes in <a href="http://zeromq.org/code:examples-chat">ZeroMQ model</a><sup>[4]</sup>: prompt and display. Prompt receives the input (producer), may pass it to E (Exchange, a local queue), then sends to the global/central Q (Queue, a global queue that receives input from all local Es). Display receives message from global/central E (a global queue that distributes message to local Qs) through local Q, then excutes them.
 
 ### RabbitMQ and ActiveMQ
 
-1. Different from ZeroMQ, these two are easier to use (while sacrificing some raw speed). Their difference is very tiny, i.e. ActiveMQ is built in Java on the JMS (Java Message Service) and is very frequently used within applications on the JVM (Java, Scala, Clojure, et al), while RabbitMQ is more widely used in Ruby or Python web application<sup>[2]</sup>.
+1. Different from ZeroMQ, these two are easier to use (while sacrificing some raw speed). Their difference is very tiny, i.e. ActiveMQ is built in Java on the JMS (Java Message Service) and is very frequently used within applications on the JVM (Java, Scala, Clojure, et al), while RabbitMQ is more widely used in <a href="http://blog.codepath.com/2013/01/06/asynchronous-processing-in-web-applications-part-2-developers-need-to-understand-message-queues/">Ruby or Python web application</a><sup>[2]</sup>.
 
 ### Kafka
 
-1. Kafka use model similar with producer-consumer<sup>[8]</sup>, and messags are sorted based on **topic**. And each topic partition is an ordered log of immutable messages, which is append-only.
+1. <a href="https://www.infoq.com/presentations/kafka-spring?utm_campaign=rightbar_v2&utm_source=infoq&utm_medium=presentations_link&utm_content=link_text">Kafka</a> use model similar with producer-consumer<sup>[8]</sup>, and messags are sorted based on **topic**. And each topic partition is an ordered log of immutable messages, which is append-only.
 2. Consumers can be in consumer group, where the individual consumer can subscribe to different partition. A consumer group serves for a generic function. This allows the cluster to scale more easily.
 3. In short, Kafka allows messages to be produced in order, and consumed in order (due to the ordered log). Topics are distributed and replicated.
 

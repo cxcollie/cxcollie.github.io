@@ -11,7 +11,7 @@ tags: [Notes]
 
 <hr/>
 
-Similar with asynchronus programming<sup>[3]</sup>, reactive programming (RP) tries to solve the problem of intensive request. The 4 major characteristics of RP<sup>[1]</sup> are: responsive, resilient, scalable, and message-driven.
+Similar with <a href="https://spring.io/blog/2016/06/07/notes-on-reactive-programming-part-i-the-reactive-landscape">asynchronus programming</a><sup>[3]</sup>, reactive programming (RP) tries to solve the problem of intensive request. The <a href="https://blog.redelastic.com/what-is-reactive-programming-bc9fa7f4a7fc">4 major characteristics</a> of RP<sup>[1]</sup> are: responsive, resilient, scalable, and message-driven.
 
 ### Responsive
 
@@ -29,7 +29,7 @@ A common problem for nowadays web application. Often times you want your applica
 
 Most of the applications transferred to reactive programming may be using observer pattern before, for which the message-driven model perfectly fits. In message-driven model, there can be combination of event-driven and actor-based.
 <br><br>
-Event-driven can be used to handle the sequential order of operations. An imperative style will implement it with callbacks, which makes caller wait for the come-back of the calling function. Another potential problem of event-driven is callback-hell<sup>[4]</sup>, where the recipients of messages are anonymous callbacks instead of addressable recipients<sup>[1]</sup>. So the [actor model]({{site.url}}/blog/2017/04/05/Ringpop-protocol-in-Uber#am) is necessary.
+Event-driven can be used to handle the sequential order of operations. An imperative style will implement it with callbacks, which makes caller wait for the come-back of the calling function. Another potential problem of event-driven is <a href="http://callbackhell.com/">callback-hell</a><sup>[4]</sup>, where the recipients of messages are anonymous callbacks instead of <a href="https://blog.redelastic.com/what-is-reactive-programming-bc9fa7f4a7fc">addressable recipients</a><sup>[1]</sup>. So the [actor model]({{site.url}}/blog/2017/04/05/Ringpop-protocol-in-Uber#am) is necessary.
 <br><br>
 For Reactive programming, there are some tools to use, like Rx (Reactive extension, and [here](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) is an excellent tutorial for RxJS) and Akka (a toolkit for building applications using the Actor pattern in Scala or Java).
 
