@@ -3,7 +3,6 @@ layout: post
 title: "Ringpop @Uber"
 date: 2017-04-05
 comments: true
-featured: true
 tags: [System-Design, Engr-Blog]
 ---
 

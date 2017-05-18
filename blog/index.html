@@ -2,33 +2,60 @@
 layout: default
 title: Blogs
 ---
-	<br>
 
-	<ul class="posts">
-	  {% for post in site.posts %}
+<br>
 
-
-	  <li> <a class="post-title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}
-	  </a></li>
-	  <div class="post-teaser"> {{ post.content | split:"<!-- more -->" | first % }} </div>
-
-	  <div style="margin-top: 0.7em">
-	  <span>{{ post.date | date_to_string }}</span>   
-		
-		{% if post.tags != empty %}
-        |
-        {% for tag in post.tags %}
-        <a class="codinfox-tag-mark" href="/blog/tag"><i class="fa fa-tag"></i>{{ tag }}</a>
-        {% endfor %}
-        {% endif %}
-
-        <br>
-        <hr/>
-	  {% endfor %}
-
-	  </div>
+<ul class="posts">
+  {% for post in paginator.posts %}
 
 
-	</ul>
+  <li> <a class="post-title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}
+  </a></li>
+  <div class="post-teaser"> {{ post.content | split:"<!-- more -->" | first % }} </div>
 
+  <div style="margin-top: 0.7em">
+  <span>{{ post.date | date_to_string }}</span>   
+	
+	{% if post.tags != empty %}
+    |
+    {% for tag in post.tags %}
+    <a class="codinfox-tag-mark" href="/blog/tag"><i class="fa fa-tag"></i>{{ tag }}</a>
+    {% endfor %}
+    {% endif %}
 
+    <br>
+    <hr/>
+
+   </div>
+  {% endfor %}
+
+</ul>
+
+<!-- pages -->
+{% if paginator.total_pages > 1 %}
+<div style="margin-left: 1em; margin-right: 1em;" class="pagination">
+  {% if paginator.previous_page %}
+    <a style="float: left; font-size: 2em;" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> </a>
+  {% else %}
+    <span style="float: left; font-size: 2em;"><i class="fa fa-chevron-left" aria-hidden="true"></i> </span>
+  {% endif %}
+
+  <span style="font-family: sans-serif; margin-left: 1em; text-align: center; font-size: 2em;">
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span>{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+  </span>
+
+  {% if paginator.next_page %}
+    <a style="float: right; font-size: 2em;" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+  {% else %}
+    <span style="float: right; font-size: 2em;"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+  {% endif %}
+</div>
+{% endif %}
