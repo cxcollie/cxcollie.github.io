@@ -153,7 +153,7 @@ in header, and
 2. in controller: 
 ```
 	@RequestMapping("/processForm")
-	public String processForm(@ModelAttribute("customer") String theCustomer, Model model) {
+	public String processForm(@ModelAttribute("customer") Customer theCustomer, Model model) {
 ```
 3. Field is set on submit (i.e. setFirstName()). Then, model can even be passed to view page, which is accessed by **${customer.firstName}**
 4. Drop-down list is 
@@ -196,3 +196,4 @@ in header, and
 ### References
 1. [Inversion of Control](https://msdn.microsoft.com/en-us/library/ff921087.aspx)
 2. [How not to do dependency injection - the static or singleton container](https://www.devtrends.co.uk/blog/how-not-to-do-dependency-injection-the-static-or-singleton-container)
+3. [Spring & Hibernate for Beginners](https://www.udemy.com/spring-hibernate-tutorial/learn/v4/content)
