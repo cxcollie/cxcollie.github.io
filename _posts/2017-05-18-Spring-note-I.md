@@ -146,8 +146,8 @@ Then to fetch data in jsp: **${message}** (which is not shown in URL).
 ```
 in header, and
 ```
-	<form:form action="processForm" **modelAttribute**="customer">
-	First name: <**form:input path**="firstName" />
+	<form:form action="processForm" modelAttribute="customer">
+	First name: <form:input path="firstName" />
 ...
 ```
 2. in controller: 
