@@ -30,8 +30,16 @@ This is commonly seen in Tomcat 8.
 	```
 	* restart Eclipse, hopefully you should find the problem solved
 
+### Other Notes
+
+1. To access form data (without binding with modelAttribute), @RequestParam("userName") String name
+
 To be continued...
 
 ### References
 1. [Issue Discussion on Github](https://github.com/jhipster/generator-jhipster/issues/3995)
 2. [StackOverflow Discussion](http://stackoverflow.com/questions/26893297/tomcat-8-throwing-org-apache-catalina-webresources-cache-getresource-unable-to)
+3. [Understanding Spring MVC Model and Session Attributes](https://www.intertech.com/Blog/understanding-spring-mvc-model-and-session-attributes/)
+4. [How do servlets work? Instantiation, sessions, shared variables and multithreading on Stack Overflow](https://stackoverflow.com/questions/3106452/how-do-servlets-work-instantiation-sessions-shared-variables-and-multithreadi/3106909#3106909)
+5. [Spring MVC pass same object between controller](https://stackoverflow.com/questions/21426519/spring-mvc-pass-same-object-between-controller)
+6. [GUI Architectures](https://martinfowler.com/eaaDev/uiArchs.html)
