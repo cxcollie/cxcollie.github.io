@@ -36,7 +36,7 @@ So the **strBlds** array is actually not instantiated. But if I change the enhan
 	}
 ```
 
-These two versions seem to be the same in logic, but behave differently. Why?
+These two versions seem to be the same in logic, but/Users/xiaocongchen/Documents/Github Personal Page/cxcollie.github.io/_posts/2017-06-04-Java-Enhanced-For-Loop.md behave differently. Why?
 
 Let's first see what does the first enhanced for loop actually look like (when using <a href="https://stackoverflow.com/questions/9305632/java-for-each-loop-and-references">iterator</a><sup>[1]</sup>):
 
