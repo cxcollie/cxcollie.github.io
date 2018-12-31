@@ -6,7 +6,8 @@ comments: true
 tags: [影评]
 ---
 
-3.5/5星
+<div class="post-teaser"> 3.5/5星 </div>
+<!-- more -->
 
 此情此景此地
 

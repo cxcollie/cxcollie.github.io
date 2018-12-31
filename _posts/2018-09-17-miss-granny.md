@@ -6,7 +6,8 @@ comments: true
 tags: [影评]
 ---
 
-3.5/5 星
+<div class="post-teaser"> 3.5/5 星 </div>
+<!-- more -->
 
 周六晚在朋友家party上一起看了这部电影。总体来说这是一部不错的休闲喜剧电影，笑中带泪，很适合朋友家人一起看。
 
